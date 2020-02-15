@@ -277,7 +277,14 @@ p.isMarried = true;
 ```
 
 * val 프로퍼티: 읽기 전용 프로퍼티로 **private 필드**와 필드를 읽는 **pulbic getter()** 를 생성함(backing 필드)
-* var 프로퍼티: 읽고 쓰기가 가능한 프로퍼티로 **private 필드**와 **public getter()/setter()**를 생성함(backing 필드)
+
+  > **TODO - 찾아보자 !**
+  >
+  > 프로퍼티에 접근지정자 (private)을 지정했을 경우에 private 필드 + private getter()가 되어 접근이 안되는 것인가? 아니면 접근 지정자 지정을 안했을 때에 default가 public 필드인가?
+
+
+
+* var 프로퍼티: 읽고 쓰기가 가능한 프로퍼티로 **private 필드**와 **public getter()**/**setter()**를 생성함(backing 필드)
 * 뿐만 아니라 **생성자가 필드를 초기화 하는 구현**이 내부적으로 구현되어 있음
 
 > **TODO - 알고가자!**
@@ -331,7 +338,7 @@ enum class Color {
 ```
 
 * 자바는 `enum`, 코틀린은 `enum class`
-* 코틀린에서의 enum은 **프트 키워드(soft keyword)**라고 부름
+* 코틀린에서의 enum은 **소프트 키워드(soft keyword)**라고 부름
 * class 앞에 붙여질 경우 특별한 의미를 지니지만 다른 곳에서는 이름에 사용할 수 있음(예약어처럼 사용이 불가하지 않음)
 
 프로퍼티와 메소드 선언 가능 (메소드 선언시 마지막 열거 값 뒤에 세미콜론 **필수**)
@@ -476,7 +483,7 @@ do {
 * 수열(Progression): 범위에 속한 값을 일정한 순서로 이터레이션
 * 예시
   * `1 rangeTo 10 step 2` 또는 `1..10 step 2`: 1~10 까지 2씩 증가하며 이터레이션
-  * `100 downTo 1 step2`: 100부터 1로 줄어들며 2씩 감소하며 이터레이션
+  * `100 downTo 1 step 2`: 100부터 1로 줄어들며 2씩 감소하며 이터레이션
   * `0 until 10`: 0부터 10까지 이터레이션(단, 10은 미포함)
 
 자바의 `for (int i = 0; i < length; i++)`에 해당하는 루프가 없다. 대신 `범위`를 사용한다.
@@ -594,7 +601,7 @@ println(readNumber(reader)) // 결과: 239
 
 ```kotlin
 fun readNumber(reader: BufferedReader) {
-    val number = trye {
+    val number = try {
         Integer.parseInt(reader.readLine())
     } catch (e: NumberFormatException) {
         return // null로 수정 시 null을 반환하게 된다.
