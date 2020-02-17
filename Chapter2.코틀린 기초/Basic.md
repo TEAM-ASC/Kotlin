@@ -1,4 +1,4 @@
-### Chapter1. 코틀린 기초
+### Chapter2. 코틀린 기초
 
 
 
@@ -284,7 +284,7 @@ p.isMarried = true;
 
 
 
-* var 프로퍼티: 읽고 쓰기가 가능한 프로퍼티로 **private 필드**와 **public getter()**/**setter()**를 생성함(backing 필드)
+* var 프로퍼티: 읽고 쓰기가 가능한 프로퍼티로 **private 필드**와 **public getter()/public setter()** 를 생성함(backing 필드)
 * 뿐만 아니라 **생성자가 필드를 초기화 하는 구현**이 내부적으로 구현되어 있음
 
 > **TODO - 알고가자!**
@@ -338,7 +338,7 @@ enum class Color {
 ```
 
 * 자바는 `enum`, 코틀린은 `enum class`
-* 코틀린에서의 enum은 **소프트 키워드(soft keyword)**라고 부름
+* 코틀린에서의 enum은 **소프트 키워드(soft keyword)** 라고 부름
 * class 앞에 붙여질 경우 특별한 의미를 지니지만 다른 곳에서는 이름에 사용할 수 있음(예약어처럼 사용이 불가하지 않음)
 
 프로퍼티와 메소드 선언 가능 (메소드 선언시 마지막 열거 값 뒤에 세미콜론 **필수**)
@@ -358,7 +358,7 @@ println(Color.BLUE.rgb()) // 결과: 255
 
 #### when
 
-자바의 `switch`와 유사하며 코틀린의 `when`은 `if`와 마찬가지로 **값을 만들어내는 식**임
+자바의 `switch`와 유사하며 코틀린의 `when`은 `if`와 마찬가지로 **값을 만들어내는 식** 임
 
 ```kotlin
 fun getColorString(color: Color) =
