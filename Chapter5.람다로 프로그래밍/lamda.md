@@ -660,7 +660,7 @@ postponeComputation(1000, object: Runnable {
 
 > Java 8 언어 기능과 Jack을 활성화 방법
 > - app 단 build.gradle 내에 **compileOptions** 를 통해 지정해준다.
-> - ![스크린샷 2020-03-05 오후 9.31.17](/img/스크린샷 2020-03-05 오후 9.31.17.png)
+> - <img src="/img/스크린샷 2020-03-05 오후 9.31.17.png" width="400" height="250">
 >
 > 코틀린 컴파일 시 자바 8 바이트 코드생성 방법
 > - jvm-target 1.8 이라고 kotlinc 호출할 때 커맨드라인에서 옵션 설정을 지정
