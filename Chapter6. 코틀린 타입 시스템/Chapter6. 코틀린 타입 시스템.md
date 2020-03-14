@@ -298,7 +298,7 @@ class MyTest {
 }
 ```
 
-
+* lateinit에 대한 초기화진행 여부를 확인하기 위해서는 ex) ::myService.isInitialized 형태로 분기처리하여 확인할 수 있다
 
 #### 1.7 널 가능 타입의 확장
 
