@@ -28,5 +28,5 @@ ASC(Android Study Coworker)의 첫 번째 주제 : 코틀린
 - [4장](https://github.com/TEAM-ASC/Kotlin/blob/master/Chapter4.%ED%81%B4%EB%9E%98%EC%8A%A4%2C%EA%B0%9D%EC%B2%B4%2C%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4/4%EC%9E%A5.md) : 클래스, 객체, 인터페이스 by 이승우
 - [5장](https://github.com/TEAM-ASC/Kotlin/blob/master/Chapter5.%EB%9E%8C%EB%8B%A4%EB%A1%9C%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/lamda.md) : 람다 by 김태형 
 - [6장](https://github.com/TEAM-ASC/Kotlin/blob/master/Chapter6.%20%EC%BD%94%ED%8B%80%EB%A6%B0%20%ED%83%80%EC%9E%85%20%EC%8B%9C%EC%8A%A4%ED%85%9C/Chapter6.%20%EC%BD%94%ED%8B%80%EB%A6%B0%20%ED%83%80%EC%9E%85%20%EC%8B%9C%EC%8A%A4%ED%85%9C.md) : 타입 시스템 by 이원준
-- [7장](https://github.com/TEAM-ASC/Kotlin/blob/master/Chapter7.%EC%97%B0%EC%82%B0%EC%9E%90%20%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9/7%EC%9E%A5.md) : 연산자 오버로딩 by 
+- [7장](https://github.com/TEAM-ASC/Kotlin/blob/master/Chapter7.%EC%97%B0%EC%82%B0%EC%9E%90%20%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9/7%EC%9E%A5.md) : 연산자 오버로딩 by 이승우
 - 예치금 : 12000원(한달기준)
