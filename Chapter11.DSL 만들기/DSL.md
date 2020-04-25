@@ -379,8 +379,12 @@ data class Issue(val id: String, val project: String, val type: String, val prio
 
 class ImportantIssuesPredicate(val project: String): (Issue) -> Boolean {
   override fun invoke(issue: Issue): Boolean {
-    return issue.project == project && issue.is
-Important()
+    return issue.project == project && issue.isImportant()
+  }
+  
+  private fun Issue.isImportant(): Boolean {
+    return type == "Bug" &&
+            (priority == "Major" || priority == "Critical")
   }
 }
 
@@ -433,7 +437,7 @@ dependencies {
   * 지정한 수신 객체 타입은 DpendencyHandler이다.
   * `invoke` 메소드는 이 수신 객체 지정 람다를 호출한다.
   * `invoke` 메소드가 DependencyHandler의 메소드이므로 이 메소드 내부에서 `this`는 DependencyHandler 객체이다.
-  * 따라서 `invoke` 안에서 DependencyHandler 타입의 객체를 따로 명시하지 않고 `compitle()` 을 호출할 수 있다.
+  * 따라서 `invoke` 안에서 DependencyHandler 타입의 객체를 따로 명시하지 않고 `compile()` 을 호출할 수 있다.
 
 ### 11.4 실전 코틀린 DSL
 
@@ -582,5 +586,6 @@ class AlertDialogBuilder {
 * 익스포즈드 라이브러리는 데이터베이스를 다루기 위한 내부 DSL을 제공한다.
 * 안코 라이브러리는 안드로이드 개발에 필요한 여러 도구를 제공한다. 그런 도구 중에는 UI 레이아웃을 정의하기 위한 내부 DSL도 있다.
 
-
+### 참고
+* [우아한 형제들 - 'Gradle Kotlin DSL' 이야기](https://woowabros.github.io/tools/2019/04/30/gradle-kotlin-dsl.html)
 
